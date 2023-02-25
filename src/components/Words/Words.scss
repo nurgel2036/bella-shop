@@ -1,0 +1,55 @@
+.outWords {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    .words {
+      overflow: hidden;
+      width: 1140px;
+      display: flex;
+      justify-content: center;
+      
+      align-items: center;
+      position: relative;
+      gap: 3px;
+      p {
+        letter-spacing: 0.5px;
+        font-family: "Rubik", sans-serif;
+        line-height: 20px;
+        font-size: 24px;
+        color: #242424;
+        position: relative;
+        z-index: 2;
+        &:hover{
+          color: #968e8e;
+        }
+        span {
+          font-weight: 700;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 2000px;
+            top: 13px;
+            margin-right: 145px;
+            background-color: #a5abb7;
+            right: 100%;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 2000px;
+            top: 13px;
+            margin-left: 175px;
+            background-color: #a5abb7;
+            left: 100%;
+          }
+          &:hover{
+            color: #232323;
+          }
+        }
+      }
+    }
+  }

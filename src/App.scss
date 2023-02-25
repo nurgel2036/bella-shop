@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /*          outShortBreak          */
+  .outShortBreak {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .shortBreakMain {
+      width: 1140px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  //      outFoursome
+  .outFoursome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .foursome-main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 1140px;
+      height: 300px;
+    }
+  }
+
+  //          .outTopSome
+  .outTopSome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    .mainTopSome {
+      width: 1140px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  /*     WordImage           */
+  .outWordImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    .wordImageMain {
+      width: 1140px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+
+//           carousel  
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  border: 1px solid #232323;
+  background-color: #232323;
+  padding: 5px 10px;
+  &:hover{
+    border: 1px solid #00b16a;
+    background-color: #00b16a;;
+  }
+}

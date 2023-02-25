@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button-dad{
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    z-index: 50;
+    .button-son{
+        padding: 5px 10px;
+        background:#00b16a90;
+        border: 1px solid #00b16a;
+        color: #fff;
+        font-size: 20px;
+    }
+
+}

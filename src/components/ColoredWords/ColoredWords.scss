@@ -1,0 +1,28 @@
+.outColoredWords {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    .coloredWords {
+      width: 1140px;
+      height: 104px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      background: #03b26c;
+
+      .coloredWords-border {
+        border: 1px solid lightgray;
+        padding: 15px 15px;
+        h1 {
+          text-align: center;
+          letter-spacing: 0.6px;
+          font-family: "Rubik", sans-serif;
+          font-weight: 800;
+          color: #fff;
+          width: 1080px;
+        }
+      }
+    }
+  }

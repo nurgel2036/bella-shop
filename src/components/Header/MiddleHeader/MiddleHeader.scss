@@ -1,0 +1,39 @@
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      span {
+        cursor: pointer;
+        padding: 6px 12px;
+        border: solid 3px lightgray;
+        &:hover {
+          background-color: #252525;
+          color: #fff;
+          border: solid 3px black;
+        }
+      }
+      .cart {
+        cursor: pointer;
+        padding: 6px 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 3px solid lightgray;
+
+        #cart {
+          color: #252525;
+          background-color: #252525;
+          &:hover {
+            color: #fff;
+            transition: ease-in-out 5s;
+          }
+        }
+        &:hover {
+          background-color: #252525;
+          border: 3px solid black;
+          color: #fff;
+        }
+      }
+  }

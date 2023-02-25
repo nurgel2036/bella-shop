@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.shortBreakAll {
+  width: 262px;
+  height: 500px;
+  transition: 0.8s;
+  .shortBreak-bgImg {
+    background-image: url(../shortBreak/productimg/product1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 262px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .block-shortBreak{
+        
+        width: 80px;
+        height: 80px;
+        border: #232323 solid 1px;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        span{
+            width: 68px;
+            height: 68px;
+            background: #232323b3;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            #bsFillHeart{
+                color: #fff;
+                font-size: 26px;
+                width: 50px;
+                height: 30px;
+            }
+        }
+    }
+  }
+  .shortBreak-bgImg2 {
+    background-image: url(../shortBreak/productimg/product2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 262px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .block-shortBreak{
+        
+        width: 80px;
+        height: 80px;
+        border: #232323 solid 1px;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        span{
+            width: 68px;
+            height: 68px;
+            background: #232323b3;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            #bsFillHeart{
+                color: #fff;
+                font-size: 26px;
+                width: 50px;
+                height: 30px;
+            }
+        }
+    }
+  }
+  .shortBreak-bgImg3 {
+    background-image: url(../shortBreak/productimg/product3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 262px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .block-shortBreak{
+        
+        width: 80px;
+        height: 80px;
+        border: #232323 solid 1px;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        span{
+            width: 68px;
+            height: 68px;
+            background: #232323b3;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            #bsFillHeart{
+                color: #fff;
+                font-size: 26px;
+                width: 50px;
+                height: 30px;
+            }
+        }
+    }
+  }
+  .shortBreak-bgImg4 {
+    background-image: url(../shortBreak/productimg/product4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 262px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .block-shortBreak{
+        
+        width: 80px;
+        height: 80px;
+        border: #232323 solid 1px;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        span{
+            width: 68px;
+            height: 68px;
+            background: #232323b3;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            #bsFillHeart{
+                color: #fff;
+                font-size: 26px;
+                width: 50px;
+                height: 30px;
+            }
+        }
+    }
+  }
+  
+  .shortBreak-under {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin-top: 15px;
+    h5 {
+        font-family: 'Rubik';
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 20px;
+      margin: 0 0 5px 0;
+      color: #232323;
+    }
+    .stars {
+      color: #232323;
+      span {
+        color: rgba(95, 88, 88, 0.52);
+        &:hover {
+          color: #232323;
+        }
+      }
+    }
+    p{
+        span{
+            color: #00b16a;
+            margin-right: 10px;
+            font-size:18px;
+            font-weight:600;
+        }
+    }
+    .icons-shortBreak{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 38px;
+        span{
+            padding: 6px 9px;
+            border: #e9e9e9 solid 2px;
+            font-size:20px;
+            color: #232323;
+            display: flex;
+            align-items: center;
+            height: 38px;
+            display: none;
+            &:hover{
+                background: #232323;
+                color: #fff;
+            }
+        }
+        .cart-shortBreak{
+            color: #232323;
+            padding: 6px 9px;
+            border: #e9e9e9 solid 2px;
+            font-size:20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 38px;
+            transition: 0.5s;
+            width: 145px;
+            p{
+            font-size:14px;
+            font-family:'Rubik';
+            font-weight: 600;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            &:hover{
+                background: #232323;
+                color: #fff;
+            }
+        }
+    }
+  }
+  &:hover{
+    .shortBreak-under{
+        .icons-shortBreak{
+            span{
+                display: block;
+            }
+        }
+    }
+    .shortBreak-bgImg,.shortBreak-bgImg2,.shortBreak-bgImg3,.shortBreak-bgImg4{
+        .block-shortBreak{
+            display: flex;
+            animation: scale 0.2s linear;
+    }
+    }
+  }
+  @keyframes scale {
+    0%{
+        transform: scale(1);
+    }     
+    100%{
+        transform: scale(1.1);
+    }       
+    }
+}

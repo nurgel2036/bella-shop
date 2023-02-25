@@ -1,0 +1,8 @@
+.common__section {
+  background: linear-gradient(#00b16aab, #00b16a71),
+    url("../components//Carousel/CarouselImg/slide3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0px;
+}
