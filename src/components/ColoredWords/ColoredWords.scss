@@ -1,3 +1,4 @@
+
 .outColoredWords {
     width: 100%;
     display: flex;
@@ -25,4 +26,19 @@
         }
       }
     }
+  }
+  .coloredWords.red-bg{
+    background: red !important;
+  }
+  .coloredWords.black-bg{
+    background: rgb(0, 0, 0) !important;
+  }
+  .coloredWords.green-bg{
+    background: green !important;
+  }
+  .coloredWords.darkblue-bg{
+    background: darkblue !important;
+  }
+  .coloredWords.yellow-bg{
+    background: yellow !important;
   }
