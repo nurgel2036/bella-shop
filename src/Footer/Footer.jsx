@@ -77,7 +77,7 @@ export default function Footer() {
             <h3>Fation</h3>
             <h3>Jeans</h3>
             <h3>Top Sellers</h3>
-            <h3>E commerce</h3>
+            <h3>Ele commerce</h3>
             <h3>Products</h3>
             <h3>Jackets</h3>
             <h3>Shop</h3>
