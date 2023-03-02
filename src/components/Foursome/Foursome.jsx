@@ -5,7 +5,7 @@ import "../Foursome/Foursome.scss";
 
 import {AiFillMessage} from 'react-icons/ai'
 import {AiFillHeart} from 'react-icons/ai'
-export default function Foursome({srca,span1,span2}) {
+export default function Foursome({srca,span1,span2,mainBool}) {
 
     const [counter,setCounter]= React.useState(18)
 
@@ -21,12 +21,12 @@ export default function Foursome({srca,span1,span2}) {
     <div className="foursome">
       <div className="foursome-images">
         <img src={srca} alt="" />
-        <span>+</span>
+        <span  className={`${mainBool} background-phon`}>+</span>
       </div>
       <div className="foursome-content">
         <div className="foursome-titles">
-          <span className="foursome-span1">{span1}</span><span>/</span>
-          <span className="foursome-span2"> {span2}</span>
+          <span className={`${mainBool} foursome-span1 span-sale`}>{span1}</span><span>/</span>
+          <span className={`${mainBool} foursome-span2 span-sale`}> {span2}</span>
         </div>
         <h5>Standard Post Comment Header Here</h5>
         <p>Fusce gravida interdum eros a mollis. Sed non <br /> lorem varius, volutpat nisl in, laoreet ante.</p>

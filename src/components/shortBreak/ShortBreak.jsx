@@ -13,7 +13,7 @@ import '../shortBreak/productimg/product2.jpg'
 import '../shortBreak/productimg/product3.jpg'
 import '../shortBreak/productimg/product4.jpg'
 
-export default function ShortBreak({shortBreak}) {
+export default function ShortBreak({shortBreak,mainBool}) {
   return (
     <div className='shortBreakAll'>
         <div className={shortBreak}>
@@ -37,7 +37,7 @@ export default function ShortBreak({shortBreak}) {
                 </span>
             </div>
             <div className="paragraph-shortBreak">
-                <p><span>$400.00</span><del>$425.00</del></p>
+                <p><span className={`${mainBool} span-sale`}>$400.00</span><del>$425.00</del></p>
             </div>
             <div className="icons-shortBreak">
                 <span><AiFillHeart/></span>

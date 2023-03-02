@@ -8,7 +8,7 @@ export default function ColoredWords({mainBool}) {
     <div className="outColoredWords">
       <div className={ `${mainBool} coloredWords`}>
         <div className="coloredWords-border">
-          <h1>FREE SHIPING ON ALL ORDERS OVER 45%</h1>
+          <h1 >FREE SHIPING ON ALL ORDERS OVER 45%</h1>
         </div>
       </div>
     </div>

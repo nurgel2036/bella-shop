@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   /*          outShortBreak          */
   .outShortBreak {
@@ -77,7 +78,49 @@ body {
   background-color: #232323;
   padding: 5px 10px;
   &:hover{
-    border: 1px solid #00b16a;
-    background-color: #00b16a;;
+    border: 1px solid #232323;
+    background-color: #232323;;
   }
 }
+
+.span-sale.red-cl{
+  color: red !important;
+}
+.span-sale.green-cl{
+  color: green !important;
+}
+.span-sale.black-cl{
+  color: black !important;
+}
+.span-sale.darkblue-cl{
+  color: darkblue !important;
+}
+.span-sale.yellow-cl{
+  color: yellow !important;
+}
+.button-shop-now.red-bg{
+  &:hover{
+    background-color: red !important;
+  }
+}
+.button-shop-now.black-bg{
+  &:hover{
+    background-color: black !important;
+  }
+}
+.button-shop-now.green-bg{
+  &:hover{
+    background-color: green !important;
+  }
+}
+.button-shop-now.darkblue-bg{
+  &:hover{
+    background-color: darkblue !important;
+  }
+}
+.button-shop-now.yellow-bg{
+  &:hover{
+    background-color: yellow !important;
+  }
+}
+

@@ -1,15 +1,15 @@
 import React from "react";
 import "../RightBlock/RightBlock.scss";
 
-function RightBlock() {
+function RightBlock({mainBool}) {
   return (
     <div className="main-img">
       <div className="image1">
-        <div className="background-phon">
+        <div className={`${mainBool} background-phon`}>
           <div className="content">
             <p>lorem ipsum</p>
             <p>Lorem ipsum dolor sit rtuuted.</p>
-            <button>SHOP NOW</button>
+            <button className={`${mainBool} button-shop-now`}>SHOP NOW</button>
           </div>
         </div>
       </div>

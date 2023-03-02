@@ -27,17 +27,13 @@ import {
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function ControlledCarousel() {
+export default function ControlledCarousel({mainBool}) {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
 
-  <style>
-    @import
-    url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap")
-  </style>;
 
   const [buttonS, setButtonS] = React.useState(button);
 
@@ -53,13 +49,14 @@ export default function ControlledCarousel() {
         <Carousel.Caption style={main}>
           <div style={caption}>
             <h3 style={h3OfWords}>
-              THE <br /> BIGGEST <br /> <span style={span}>SALE </span>
+              THE <br /> BIGGEST <br /> <span style={span}className={`${mainBool} span-sale`}>SALE </span>
             </h3>{" "}
             <br />
             <button
               style={buttonS}
               onMouseOver={() => setButtonS(buttonhover2)}
               onMouseOut={() => setButtonS(button2)}
+              className={`${mainBool} button-shop-now`}
             >
               SHOP NOW
             </button>
@@ -82,6 +79,7 @@ export default function ControlledCarousel() {
             <button
               style={buttonS}
               onMouseOver={() => setButtonS(buttonhover)}
+              className={`${mainBool} button-shop-now`}
               onMouseOut={() => setButtonS(button)}
             >
               SHOP THIS ITEM NOW
@@ -100,6 +98,7 @@ export default function ControlledCarousel() {
               style={buttonS}
               onMouseOver={() => setButtonS(buttonhover)}
               onMouseOut={() => setButtonS(button)}
+              className={`${mainBool} button-shop-now`}
             >
               SHOP THIS ITEM NOW
             </button>

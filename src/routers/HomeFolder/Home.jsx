@@ -9,10 +9,7 @@ import SingleWord from "../../components/SingleWord/SingleWord";
 import ResentPosts from "../../components/RecentPosts/ResentPosts";
 import Foursome from "../../components/Foursome/Foursome";
 import TopSome from "../../components/Content/TopSome/TopSome";
-import WordImage from "../../components/Content/WordImage/WordImage";
 import ShortBreak from "../../components/shortBreak/ShortBreak";
-
-
 
 
 import recentPostPhoto1 from "../../components/Foursome/FoursomeImg/recentpost1.jpg";
@@ -20,13 +17,13 @@ import recentPostPhoto2 from "../../components/Foursome/FoursomeImg/recentpost2.
 import recentPostPhoto3 from "../../components/Foursome/FoursomeImg/recentpost3.jpg";
 import recentPostPhoto4 from "../../components/Foursome/FoursomeImg/recentpost4.jpg";
 
-
-
+import ColorChanger from "../../components/Content/ColorChanger/ColorChanger";
 
 
 
 
 function Home() {
+  const [mainBool, setMainBool] = React.useState();
 
 
   const shortBreak ="shortBreak-bgImg";
@@ -50,31 +47,31 @@ function Home() {
 
   return (
     <div className="Home">
-      <ControlledCarousel/>
-      <Blocks />
+      <ControlledCarousel mainBool={mainBool}/>
+      <Blocks mainBool={mainBool}/>
       <Words />
       {/*          outShortBreak          */}
       <div className="outShortBreak ">
         <div className="shortBreakMain">
-          <ShortBreak shortBreak={shortBreak}></ShortBreak>
-          <ShortBreak shortBreak={shortBreak2}></ShortBreak>
-          <ShortBreak shortBreak={shortBreak3}></ShortBreak>
-          <ShortBreak shortBreak={shortBreak4}></ShortBreak>
+          <ShortBreak shortBreak={shortBreak} mainBool={mainBool}></ShortBreak>
+          <ShortBreak shortBreak={shortBreak2} mainBool={mainBool}></ShortBreak>
+          <ShortBreak shortBreak={shortBreak3} mainBool={mainBool}></ShortBreak>
+          <ShortBreak shortBreak={shortBreak4} mainBool={mainBool}></ShortBreak>
         </div>
       </div>
-      <ColoredWords />
+      <ColoredWords  mainBool={mainBool}/>
       <SingleWord />
       <ResentPosts />
       {          /* outFoursome           */}
       <div className="outFoursome">
         <div className="foursome-main">
-          <Foursome srca={recentPostPhoto101} span1={shoes} span2={dress}></Foursome>
-          <Foursome srca={recentPostPhoto202} span1={children} span2={kids}></Foursome> 
-          <Foursome srca={recentPostPhoto303} span1={wedding} span2={meeting}></Foursome>
-          <Foursome srca={recentPostPhoto404} span1={man} span2={accessories}></Foursome>
+          <Foursome srca={recentPostPhoto101} mainBool={mainBool} span1={shoes} span2={dress}></Foursome>
+          <Foursome srca={recentPostPhoto202} mainBool={mainBool} span1={children} span2={kids}></Foursome> 
+          <Foursome srca={recentPostPhoto303} mainBool={mainBool} span1={wedding} span2={meeting}></Foursome>
+          <Foursome srca={recentPostPhoto404} mainBool={mainBool} span1={man} span2={accessories}></Foursome>
         </div>
       </div>
-      
+      <ColorChanger setMainBool={setMainBool} mainBool={mainBool}/>
       {/*            outTopSome            */}
       <div className="outTopSome">
         <div className="mainTopSome">

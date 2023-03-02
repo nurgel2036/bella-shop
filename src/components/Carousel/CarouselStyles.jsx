@@ -83,19 +83,18 @@ export const button = {
 }
 export const button2 = {
   'text-align':'center',
-  'margin-left':'200px',
   'margin-top':'0px',
   'padding' : '6.5px 20px',
   'font-weight': '700',
   'color': '#fff',
   'background':'#232323',
   'border':'none',
+  'margin-left':'200px',
 }
 
 export const buttonhover={
   'background':'#00b16a',
   'text-align':'center',
-  // 'margin-left':'200px',
   'margin-top':'0px',
   'padding' : '6.5px 20px',
   'font-weight': '800',

@@ -3,6 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+.background-phon.red-bg{
+    &:hover{
+        background: rgba(255, 0, 0, 0.486) !important;
+    }
+}
+
+.background-phon.green-bg{
+    &:hover{
+        background: rgba(0, 128, 0, 0.496) !important;
+    }
+}
+.background-phon.black-bg{
+    &:hover{
+        background: rgba(0, 0, 0, 0.493)!important;
+    }
+}
+.background-phon.darkblue-bg{
+    &:hover{
+        background: rgba(0, 0, 139, 0.508) !important;
+    }
+}
+.background-phon.yellow-bg{
+    &:hover{
+        background: rgba(255, 255, 0, 0.485) !important;
+    }
+}
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;900&display=swap");
  .main-img{
     overflow: hidden;

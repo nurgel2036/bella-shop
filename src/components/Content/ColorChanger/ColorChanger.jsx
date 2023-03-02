@@ -1,24 +1,26 @@
 import React from "react";
 import "./ColorChanger.scss";
 import { IoMdSettings } from "react-icons/io";
-import ColoredWords from "../../ColoredWords/ColoredWords";
 
-export default function ColorChanger() {
+
+
+export default function ColorChanger({setMainBool,mainBool}) {
+
   const ChangeClick1 = () => {
-    setMainBool("red-bg");
+    setMainBool("red-bg red-cl");
   };
 
   const ChangeClick2 = () => {
-    setMainBool("black-bg");
+    setMainBool("black-bg black-cl");
   };
   const ChangeClick3 = () => {
-    setMainBool("green-bg");
+    setMainBool("green-bg green-cl");
   };
   const ChangeClick4 = () => {
-    setMainBool("darkblue-bg");
+    setMainBool("darkblue-bg darkblue-cl");
   };
   const ChangeClick5 = () => {
-    setMainBool("yellow-bg");
+    setMainBool("yellow-bg yellow-cl");
   };
   const ChangeClick6 = () => {
     setMainBool("");
@@ -50,7 +52,6 @@ export default function ColorChanger() {
     },
   ];
 
-  const [mainBool, setMainBool] = React.useState();
 
   const [boolean, setBoolean] = React.useState(false);
   const ToggleMenuColor = () => {
@@ -80,7 +81,6 @@ export default function ColorChanger() {
         </div>
       </div>
 
-      <ColoredWords mainBool={mainBool} />
     </div>
   );
 }
