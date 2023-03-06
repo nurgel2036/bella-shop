@@ -1,17 +1,21 @@
 import React from "react";
 import "../../styles/our-member.css";
 import { Col } from "reactstrap";
-import { Link } from "react-router-dom";
 import ava01 from "../../components/shortBreak/productimg/product1.jpg";
 import ava02 from '../../components/shortBreak/productimg/product3.jpg';
 import ava04 from '../../components/shortBreak/productimg/product2.jpg'
 import ava03 from '../../components/shortBreak/productimg/product4.jpg';
 
+import {BsFacebook} from 'react-icons/bs'
+import {BsInstagram} from 'react-icons/bs'
+import {FaTiktok} from 'react-icons/fa'
+import {BsWhatsapp} from 'react-icons/bs'
+
 const OUR__MEMBERS = [
   {
     name: "Jhon Doe",
     experience: "12 years of experience",
-    fbUrl: "#",
+    fbUrl: "https://www.instagram.com/itpark_osh/",
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
@@ -21,7 +25,7 @@ const OUR__MEMBERS = [
   {
     name: "David Lisa",
     experience: "11 month of experience",
-    fbUrl: "#",
+    fbUrl: "https://www.instagram.com/itpark_osh/",
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
@@ -31,7 +35,7 @@ const OUR__MEMBERS = [
   {
     name: "Hilton Tom",
     experience: "5 years of experience",
-    fbUrl: "#",
+    fbUrl: "https://www.instagram.com/itpark_osh/",
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
@@ -41,7 +45,7 @@ const OUR__MEMBERS = [
   {
     name: "Jhon Doe",
     experience: "2 years of experience",
-    fbUrl: "#",
+    fbUrl: "https://www.instagram.com/itpark_osh/",
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
@@ -49,7 +53,7 @@ const OUR__MEMBERS = [
   },
 ];
 
-const OurMembers = () => {
+const OurMembers = ({ mainBool }) => {
   return (
     <>
       {OUR__MEMBERS.map((item, index) => (
@@ -58,21 +62,21 @@ const OurMembers = () => {
             <div className="single__member-img">
               <img src={item.imgUrl} alt="" className="w-100" />
 
-              <div className="single__member-social">
-                <Link to={item.fbUrl}>
-                  <i class="ri-facebook-line"></i>
-                </Link>
-                <Link to={item.twitUrl}>
-                  <i class="ri-twitter-line"></i>
-                </Link>
+              <div className={`${mainBool} single__member-social`}>
+                <a target='_blank' rel="noreferrer"  href={item.fbUrl}>
+                  <BsFacebook/>
+                </a>
+                <a target='_blank'rel="noreferrer"   href={item.twitUrl}>
+                  <BsInstagram/>
+                </a>
 
-                <Link to={item.linkedinUrl}>
-                  <i class="ri-linkedin-line"></i>
-                </Link>
+                <a target='_blank' rel="noreferrer"  href={item.aedinUrl}>
+                  <FaTiktok/>
+                </a>
 
-                <Link to={item.instUrl}>
-                  <i class="ri-instagram-line"></i>
-                </Link>
+                <a target='_blank' rel="noreferrer"  href={item.instUrl}>
+                  <BsWhatsapp/>
+                </a>
               </div>
             </div>
 

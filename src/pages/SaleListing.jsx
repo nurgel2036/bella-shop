@@ -10,14 +10,14 @@ import ShortBreak from "../components/shortBreak/ShortBreak";
 
 
 
-const SaleListing = () => {
+const SaleListing = ({ mainBool }) => {
   const shortBreak = "shortBreak-bgImg";
 const shortBreak2 = "shortBreak-bgImg2";
 const shortBreak3 = "shortBreak-bgImg3";
 const shortBreak4 = "shortBreak-bgImg4";
   return (
     <Helmet title="Sale">
-      <CommonSection title="Sale Listing" />
+      <CommonSection title="Sale Listing" mainBool={mainBool}/>
 
       <section>
         <Container>
@@ -38,10 +38,10 @@ const shortBreak4 = "shortBreak-bgImg4";
 
             <div className="outShortBreak ">
               <div className="shortBreakMain">
-                <ShortBreak shortBreak={shortBreak}></ShortBreak>
-                <ShortBreak shortBreak={shortBreak2}></ShortBreak>
-                <ShortBreak shortBreak={shortBreak3}></ShortBreak>
-                <ShortBreak shortBreak={shortBreak4}></ShortBreak>
+                <ShortBreak shortBreak={shortBreak} mainBool={mainBool}></ShortBreak>
+                <ShortBreak shortBreak={shortBreak2} mainBool={mainBool}></ShortBreak>
+                <ShortBreak shortBreak={shortBreak3} mainBool={mainBool}></ShortBreak>
+                <ShortBreak shortBreak={shortBreak4} mainBool={mainBool}></ShortBreak>
               </div>
             </div>
 

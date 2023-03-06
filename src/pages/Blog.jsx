@@ -4,10 +4,10 @@ import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 import BlogList from "../components/UI/BlogList";
 
-const Blog = () => {
+const Blog = ({ mainBool }) => {
   return (
     <Helmet title="Blogs">
-      <CommonSection title="Blogs" />
+      <CommonSection title="Blogs" mainBool={mainBool}/>
       <section>
         <Container>
           <Row>

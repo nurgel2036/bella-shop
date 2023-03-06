@@ -1,12 +1,12 @@
 import React from "react";
 import "../../styles/become-driver.css";
 import { Container, Row, Col } from "reactstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
-const BecomeDriverSection = () => {
+const BecomeDriverSection = ({ mainBool }) => {
   return (
-    <section className="become__driver">
+    <section className={`${mainBool} become__driver common__section`}>
       <Container>
         <Row>
           <Col lg="6" md="6" sm="12" className="become__driver__content">
@@ -16,7 +16,7 @@ const BecomeDriverSection = () => {
 
             <Link to>
               {" "}
-              <button className="btn become__driver-btn mt-4">
+              <button className={`btn become__driver-btn mt-4 mainBool ${mainBool} span-sale`}>
                 Become a Driver
               </button>
             </Link>

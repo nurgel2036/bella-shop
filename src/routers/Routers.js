@@ -17,10 +17,10 @@ const Routers = ({mainBool,setMainBool}) => {
       <Route path="/" element={<Navigate to="/home" />} />
       <Route path="/home" element={<Home mainBool={mainBool} setMainBool={setMainBool}/>} />
       <Route path="/about" element={<About mainBool={mainBool}/>} />
-      <Route path="/sale" element={<SaleListing />} />
-      <Route path="/blogs" element={<Blog />} />
+      <Route path="/sale" element={<SaleListing mainBool={mainBool}/>} />
+      <Route path="/blogs" element={<Blog mainBool={mainBool}/>} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/contact" element={<Contact mainBool={mainBool}/>} />
       <Route path="*" element={<NotFound />} />
       <Route path="/sale__detail" element={<SaleDetail/>}/>
     </Routes>

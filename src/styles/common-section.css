@@ -7,6 +7,44 @@
   padding: 80px 0px;
 }
 
-.common__section.bg-red{
-  background: linear-gradient(#ff0000ab, #ff000071),
+.common__section.red-bg {
+  background: linear-gradient(#ff000085, #ff00004f),
+  url("../components//Carousel/CarouselImg/slide3.png") ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0px;
+}
+
+.common__section.green-bg {
+  background: linear-gradient(#3cff0085, #3cff004f),
+  url("../components//Carousel/CarouselImg/slide3.png") ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0px;
+}
+.common__section.black-bg {
+  background: linear-gradient(#00000085, #0000004f),
+  url("../components//Carousel/CarouselImg/slide3.png") ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0px;
+}
+.common__section.darkblue-bg {
+  background: linear-gradient(#2600ff85, #2600ff4f),
+  url("../components//Carousel/CarouselImg/slide3.png") ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0px;
+}
+.common__section.yellow-bg {
+  background: linear-gradient(#d9ff0085, #d9ff004f),
+  url("../components//Carousel/CarouselImg/slide3.png") ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0px;
 }

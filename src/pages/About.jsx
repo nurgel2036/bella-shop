@@ -64,7 +64,7 @@ const About = ({ mainBool }) => {
         </Container>
       </section>
 
-      <BecomeDriverSection />
+      <BecomeDriverSection mainBool={ mainBool }/>
 
 
       <section>
@@ -74,7 +74,7 @@ const About = ({ mainBool }) => {
               <h6 className="section__subtitle">Our sellers</h6>
               <h2 className="section__title">Top accessories</h2>
             </Col>
-            <OurMembers />
+            <OurMembers mainBool={mainBool}/>
           </Row>
         </Container>
       </section>

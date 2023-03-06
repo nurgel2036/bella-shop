@@ -27,10 +27,10 @@ const socialLinks = [
   },
 ];
 
-const Contact = () => {
+const Contact = ({ mainBool }) => {
   return (
     <Helmet title="Contact">
-      <CommonSection title="Contact" />
+      <CommonSection title="Contact" mainBool={mainBool}/>
       <div className="out-contact">
         <div className="contact-main">
 
