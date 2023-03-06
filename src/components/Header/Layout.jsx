@@ -14,12 +14,12 @@ const icon = <SiBuymeacoffee />;
 const icon2 = <FiPhoneCall />;
 const icon3 = <TbMessageCircle />;
 
-const Layout = ({ mainBool, setMainBool}) => {
+const Layout = () => {
   return (
     <Fragment>
-      <Header mainBool={mainBool}/>
+      <Header />
       <div>
-        <Routers mainBool={mainBool} setMainBool={setMainBool}/>
+        <Routers />
       </div>
       <div className="outWordImage">
         <div className="wordImageMain">
@@ -28,8 +28,8 @@ const Layout = ({ mainBool, setMainBool}) => {
           <WordImage icon={icon3} titleOfWord={"money back"}></WordImage>
         </div>
       </div>
-      <GoToTop mainBool={mainBool}/>
-      <Footer mainBool={mainBool}/>
+      <GoToTop/>
+      <Footer />
     </Fragment>
   );
 };

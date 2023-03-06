@@ -259,3 +259,63 @@
     }
   }
 }
+.border-color.red-bg{
+  border-color: red !important;
+}
+.border-color.green-bg{
+  border-color: green !important;
+}
+.border-color.black-bg{
+  border-color: black !important;
+}
+.border-color.darkblue-bg{
+  border-color: darkblue !important;
+}
+.border-color.yellow-bg{
+  border-color: yellow !important;
+}
+
+.blocks-footer3-pointer.red-bg{
+  &:hover{
+    color: red !important;
+    .biArrow{
+      background: red !important;
+    }
+  }
+}
+.blocks-footer3-pointer.black-bg{
+  &:hover{
+    color: black !important;
+    .biArrow{
+      background: black !important;
+    }
+  }
+}
+
+.blocks-footer3-pointer.green-bg{
+  &:hover{
+    color: green !important;
+    .biArrow{
+      background: green !important;
+    }
+  }
+}
+
+.blocks-footer3-pointer.darkblue-bg{
+  &:hover{
+    color: darkblue !important;
+    .biArrow{
+      background: darkblue !important;
+    }
+  }
+}
+
+.blocks-footer3-pointer.yellow-bg{
+  &:hover{
+    color: yellow !important;
+    .biArrow{
+      background: yellow !important;
+    }
+  }
+}
+

@@ -17,13 +17,11 @@ import recentPostPhoto2 from "../../components/Foursome/FoursomeImg/recentpost2.
 import recentPostPhoto3 from "../../components/Foursome/FoursomeImg/recentpost3.jpg";
 import recentPostPhoto4 from "../../components/Foursome/FoursomeImg/recentpost4.jpg";
 
-import ColorChanger from "../../components/Content/ColorChanger/ColorChanger";
 
 
 
 
-function Home() {
-  const [mainBool, setMainBool] = React.useState();
+function Home({mainBool,setMainBool}) {
 
 
   const shortBreak ="shortBreak-bgImg";
@@ -71,7 +69,6 @@ function Home() {
           <Foursome srca={recentPostPhoto404} mainBool={mainBool} span1={man} span2={accessories}></Foursome>
         </div>
       </div>
-      <ColorChanger setMainBool={setMainBool} mainBool={mainBool}/>
       {/*            outTopSome            */}
       <div className="outTopSome">
         <div className="mainTopSome">

@@ -16,9 +16,9 @@ import { BiArrowToRight } from "react-icons/bi";
 
 import "../Footer/Footer.scss";
 import { Link } from "react-router-dom";
-export default function Footer() {
+export default function Footer({mainBool}) {
   return (
-    <div className="outFooter">
+    <div className={`outFooter border-color ${mainBool}`}>
       <div className="mainFooter">
         <div className="blocks-footer1">
           <h4>about us</h4>
@@ -51,22 +51,22 @@ export default function Footer() {
         </div>
         <div className="blocks-footer3">
           <h4>information</h4>
-          <div className="blocks-footer3-pointer">
+          <div className={`blocks-footer3-pointer ${mainBool}`}>
             <Link to={'/about'}> <BiArrowToRight className="biArrow" /> About us{" "}</Link>
           </div>
-          <div className="blocks-footer3-pointer">
+          <div className={`blocks-footer3-pointer ${mainBool}`}>
             <Link to={'/cars'}>            <BiArrowToRight className="biArrow" />
             Delivery info </Link>
           </div>
-          <div className="blocks-footer3-pointer">
+          <div className={`blocks-footer3-pointer ${mainBool}`}>
               <Link to={'/contact'}>            <BiArrowToRight className="biArrow" />
             Contact us</Link>
           </div>
-          <div className="blocks-footer3-pointer">
+          <div className={`blocks-footer3-pointer ${mainBool}`}>
             <BiArrowToRight className="biArrow" />
             Terms and Conditions
           </div>
-          <div className="blocks-footer3-pointer">
+          <div className={`blocks-footer3-pointer ${mainBool}`}>
            <Link to={'/blogs'}>  <BiArrowToRight className="biArrow" />
             Blog  </Link>
           </div>

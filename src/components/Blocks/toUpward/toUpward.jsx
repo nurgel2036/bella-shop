@@ -3,7 +3,7 @@ import React from 'react';
 import {MdArrowUpward} from 'react-icons/md'
 import '../toUpward/toUpward.scss'
 
-export default function GoToTop()  {
+export default function GoToTop({mainBool})  {
   const [showButton, setShowButton] = React.useState(false);
 
   React.useEffect(() => {
@@ -34,7 +34,7 @@ export default function GoToTop()  {
 
   return (
     <div style={{ display: showButton ? "block" : "none" }}  className='button-dad'>
-      <button onClick={handleClick} className='button-son'><MdArrowUpward/></button>
+      <button onClick={handleClick} className={`${mainBool} coloredWords button-son`}><MdArrowUpward/></button>
     </div>
   );
 };

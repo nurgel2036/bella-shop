@@ -11,12 +11,12 @@ import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import SaleDetail from "../components/UI/SaleDetail";
 
-const Routers = () => {
+const Routers = ({mainBool,setMainBool}) => {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/home" />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/home" element={<Home mainBool={mainBool} setMainBool={setMainBool}/>} />
+      <Route path="/about" element={<About mainBool={mainBool}/>} />
       <Route path="/sale" element={<SaleListing />} />
       <Route path="/blogs" element={<Blog />} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />

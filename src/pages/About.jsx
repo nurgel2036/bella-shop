@@ -13,10 +13,10 @@ import { Link } from "react-router-dom";
 
 
 
-const About = () => {
+const About = ({ mainBool }) => {
   return (
     <Helmet title="About">
-      <CommonSection title="About Us" />
+      <CommonSection title="About Us" mainBool={mainBool}/>
       <AboutSection aboutClass="aboutPage" />
 
       <section className="about__page-section">

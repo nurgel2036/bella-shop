@@ -196,6 +196,21 @@
   padding: 1px 12px;
   border-radius: 3px;
 }
+.nav__active.red-bg{
+  background: red !important;
+}
+.nav__active.green-bg{
+  background: green !important;
+}
+.nav__active.black-bg{
+  background: black !important;
+}
+.nav__active.darkblue-bg{
+  background: darkblue !important;
+}
+.nav__active.yellow-bg{
+  background: yellow !important;
+}
 
 @media only screen and (max-width: 768px) {
   .header__top,

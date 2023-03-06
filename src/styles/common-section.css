@@ -6,3 +6,7 @@
   background-repeat: no-repeat;
   padding: 80px 0px;
 }
+
+.common__section.bg-red{
+  background: linear-gradient(#ff0000ab, #ff000071),
+}

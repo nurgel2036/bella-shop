@@ -32,7 +32,7 @@ const navLinks = [
   },
 ];
 
-const Header = () => {
+const Header = ({ mainBool }) => {
   const [count, setCount] = React.useState(0);
 
   const [isScrolled,setScrolled] = React.useState(false)
@@ -115,7 +115,7 @@ const Header = () => {
                   <NavLink
                     to={item.path}
                     className={(navClass) =>
-                      navClass.isActive ? "nav__active nav__item" : "nav__item"
+                      navClass.isActive ? `${mainBool} button-shop-now nav__active nav__item` : `${mainBool} button-shop-now nav__item`
                     }
                     key={index}
                   >
