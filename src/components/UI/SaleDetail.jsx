@@ -6,7 +6,7 @@ import sb4 from "../shortBreak/productimg/product4.jpg";
 
 import "../../styles/sale-detail.scss";
 
-export default function SaleDetail() {
+export default function SaleDetail({ mainBool }) {
   const Saledetail = [
     {
       id: 1,
@@ -74,25 +74,25 @@ export default function SaleDetail() {
         <img src={detail.img} alt="" id="sale-content-img1" />
         <div className="sale-detail-content">
           <h1 className="uc">
-            Title of the Jacket : <span> {detail.brand}</span>
+            Title of the Jacket : <span className={`${mainBool} span-sale `}> {detail.brand}</span>
           </h1>
           <h3 className="uc">
-            Color : <span>{detail.title}</span>
+            Color : <span className={`${mainBool} span-sale `}>{detail.title}</span>
           </h3>
           <div className="price-made_in">
             <h4 className="uc">
-              Price : <span>{detail.price}</span>
+              Price : <span className={`${mainBool} span-sale `}>{detail.price}</span>
             </h4>
             <h4 className="uc">
-              Made in : <span>{detail.made_in}</span>
+              Made in : <span className={`${mainBool} span-sale `}>{detail.made_in}</span>
             </h4>
             <h4 className="uc">
-              The Quality of The Jackets : <span>{detail.quolity}</span>
+              The Quality of The Jackets : <span className={`${mainBool} span-sale  `}>{detail.quolity}</span>
             </h4>
           </div>
           <h5>{detail.description} 
               <blockquote className="uc">
-                <span> They are so good that after purchasing you won't regret</span>
+                <span className={`${mainBool} span-sale `}> They are so good that after purchasing you won't regret</span>
               </blockquote>
               Lorem ipsum dolor sit amet, consectetur adipisicing el
               it. Eius dolores impedit sapiente quidem esse tempore neque

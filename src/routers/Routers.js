@@ -22,7 +22,7 @@ const Routers = ({mainBool,setMainBool}) => {
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/contact" element={<Contact mainBool={mainBool}/>} />
       <Route path="*" element={<NotFound />} />
-      <Route path="/sale__detail" element={<SaleDetail/>}/>
+      <Route path="/sale__detail" element={<SaleDetail mainBool={mainBool}/>}/>
     </Routes>
   );
 };

@@ -197,7 +197,7 @@
     }
     .icons-shortBreak{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         height: 38px;
         span{
@@ -207,7 +207,6 @@
             color: #232323;
             display: flex;
             align-items: center;
-            height: 38px;
             display: none;
             &:hover{
                 background: #232323;
@@ -222,9 +221,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 38px;
             transition: 0.5s;
             width: 145px;
+            height: 38px;
             p{
             font-size:14px;
             font-family:'Rubik';
@@ -243,6 +242,7 @@
   &:hover{
     .shortBreak-under{
         .icons-shortBreak{
+        justify-content: space-around;
             span{
                 display: block;
             }
