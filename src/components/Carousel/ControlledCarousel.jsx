@@ -41,12 +41,12 @@ export default function ControlledCarousel({mainBool}) {
     <Carousel
       activeIndex={index}
       onSelect={handleSelect}
-      fade
-      interval={100000000}
+      fade  
+      interval={10000}
     >
-      <Carousel.Item>
+      <Carousel.Item > 
         <img className="d-block w-100" src={carousel1} alt="First slide" />
-        <Carousel.Caption style={main}>
+        <Carousel.Caption style={main} className='caption-carousel'>
           <div style={caption}>
             <h3 style={h3OfWords}>
               THE <br /> BIGGEST <br /> <span style={span}className={`${mainBool} span-sale`}>SALE </span>

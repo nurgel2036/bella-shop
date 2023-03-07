@@ -5,6 +5,7 @@ import MiddleHeader from "./MiddleHeader/MiddleHeader";
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 import "../../styles/header.scss";
+import './Header.media.scss'
 
 import { BiSearchAlt2 } from "react-icons/bi";
 
@@ -57,7 +58,8 @@ const Header = ({ mainBool }) => {
   },[])   
 
   return (
-    <header className="header">
+    <div className="header-out">
+         <header className="header">
       <div className={isScrolled ? "header__top" : "header__top"}>
         <div className="header__top__left">
           <Link to={'/contact'}> <span>Need Help?</span></Link>
@@ -129,7 +131,8 @@ const Header = ({ mainBool }) => {
         </Container>
       </div>
       </div>
-    </header>
+    </header> 
+    </div>
   );
 };
 

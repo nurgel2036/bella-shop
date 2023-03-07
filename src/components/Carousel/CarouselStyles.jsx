@@ -51,9 +51,11 @@ export  const main = {
   'text-align':'left',
   'align-items' : 'center',
   'height':'100%',
-  'width':'100%',
+  'width':'1140px',
 }
-export const caption = { 
+export const caption = {
+  'display' : 'inline-block',
+  'margin-right' : 'auto',
   'width' : '1140px',
   'text-align':'left',
 }
