@@ -6,6 +6,7 @@ import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 import "../../styles/header.scss";
 import './Header.media.scss'
+import HelpFieldModal from "../login&register/HelpField/HelpField";
 
 import { BiSearchAlt2 } from "react-icons/bi";
 
@@ -57,6 +58,9 @@ const Header = ({ mainBool }) => {
     return ()=> window.removeEventListener('scroll', WindowScroll)
   },[])   
 
+  const [helpField, setHelpField] = React.useState(false);
+
+
   return (
     <div className="header-out">
          <header className="header">
@@ -69,9 +73,11 @@ const Header = ({ mainBool }) => {
         </div>
 
         <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
-          <Link to="#" className=" d-flex align-items-center gap-1">
-            <i class="ri-login-circle-line"></i> Login
+          <Link to="#" className=" d-flex align-items-center gap-1" >
+            <i class="ri-login-circle-line"></i> <span onClick={()=>setHelpField(true)}>Login</span>
           </Link>
+          { helpField && <HelpFieldModal setHelpField={setHelpField} />}
+
 
           <Link to="#" className=" d-flex align-items-center gap-1">
             <i class="ri-user-line"></i> Register
